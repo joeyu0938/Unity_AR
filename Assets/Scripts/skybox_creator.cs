@@ -2,6 +2,8 @@ using UnityEngine;
 using System.IO;
 using Superla.RadianceHDR;
 using UnityEngine.SocialPlatforms;
+using UnityEngine.UIElements;
+using System;
 
 public class skybox_creator : MonoBehaviour
 {
@@ -29,21 +31,9 @@ public class skybox_creator : MonoBehaviour
         skyboxMaterial = new Material(Shader.Find("Skybox/Panoramic"));
         skyboxMaterial.SetTexture("_MainTex", tex);
         RenderSettings.skybox = skyboxMaterial;
-        RenderSettings.skybox.SetFloat("_Exposure", (float)1.4);
+        RenderSettings.skybox.SetFloat("_Exposure", 1.8f);
+        RenderSettings.skybox.SetFloat("_Rotation", 90f);
         DynamicGI.UpdateEnvironment();
-        // Resources.UnloadAsset(tex);
-
-        //下面可以跑 不過是以檔案型態 上面位元組一直有問題猜測是有隱藏的header
-
-        //AssetDatabase.Refresh();
-        //AssetDatabase.ImportAsset("Assets/skybox/upload_nolight.exr");
-
-        //Texture2D tex = (Texture2D)AssetDatabase.LoadAssetAtPath<Texture2D>("Assets/skybox/upload_nolight.exr");
-        //Material skyboxMaterial = new Material(Shader.Find("Skybox/Panoramic"));
-        //skyboxMaterial.SetTexture("_MainTex", tex);
-
-        //Debug.Log("sky_create");
-        //RenderSettings.skybox = skyboxMaterial;
     }
 
 }
