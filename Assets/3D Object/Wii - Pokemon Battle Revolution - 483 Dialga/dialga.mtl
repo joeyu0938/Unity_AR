@@ -1,0 +1,54 @@
+newmtl dialga_body_hard
+ illum 2
+ Ka 0.2 0.2 0.2
+ Kd 0.5019608 0.5019608 0.5019608
+ Ks 0.227451 0.5137255 0.07058824
+ Ns 10
+ d 1
+ Tr 0
+ map_Kd Texture_0_CMP.png
+newmtl dialga_eye
+ illum 2
+ Ka 0.3019608 0.3019608 0.3019608
+ Kd 0.8 0.8 0.8
+ Ks 0.2352941 0.4588235 0.7607843
+ Ns 20
+ d 1
+ Tr 0
+ map_Kd Texture_0_CMP.png
+newmtl dialga_body_soft
+ illum 2
+ Ka 0.3019608 0.3019608 0.3019608
+ Kd 0.8 0.8 0.8
+ Ks 0.227451 0.5137255 0.07058824
+ Ns 100
+ d 1
+ Tr 0
+ map_Kd Texture_0_CMP.png
+newmtl dialga_body_daia
+ illum 2
+ Ka 0.5019608 0.5019608 0.5019608
+ Kd 0.8 0.8 0.8
+ Ks 0.2352941 0.6392157 0.8431373
+ Ns 100
+ d 1
+ Tr 0
+ map_Kd Texture_5_CMP.png
+newmtl dialga_body_hard0
+ illum 2
+ Ka 0.2 0.2 0.2
+ Kd 0.5019608 0.5019608 0.5019608
+ Ks 0.227451 0.5137255 0.07058824
+ Ns 10
+ d 1
+ Tr 0
+ map_Kd Texture_0_CMP.png
+newmtl dialga_body_hard1
+ illum 2
+ Ka 0.2 0.2 0.2
+ Kd 0.5019608 0.5019608 0.5019608
+ Ks 0.227451 0.5137255 0.07058824
+ Ns 10
+ d 1
+ Tr 0
+ map_Kd Texture_0_CMP.png
